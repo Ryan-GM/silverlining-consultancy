@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Calendar, Users, Target, Heart, Shield, Lightbulb, ArrowRight, CheckCircle, Globe, Mail, Phone } from 'lucide-react';
+import { Calendar, Users, Target, Heart, Shield, Lightbulb, ArrowRight, CheckCircle, Globe, Mail, Phone, MapPin } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ServiceCard from '@/components/ServiceCard';
@@ -9,6 +9,7 @@ import AnimatedCounter from '@/components/AnimatedCounter';
 import StoolIllustration from '@/components/StoolIllustration';
 import ClientLogos from '@/components/ClientLogos';
 import ExperienceTimeline from '@/components/ExperienceTimeline';
+import ContactForm from '@/components/ContactForm';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -332,39 +333,116 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section id="contact" className="section-padding bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="max-w-4xl mx-auto animate-fade-in">
-            <h2 className="font-serif font-bold text-4xl md:text-5xl mb-6">
-              Contact Us:
+      <section id="contact" className="section-padding bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-primary mb-6">
+              Get In Touch
             </h2>
-            <p className="text-xl text-silver-200 mb-8 leading-relaxed">
-              Partner with Silverlining Consulting Limited and transform your vision into reality. Get Started Today.
+            <p className="text-xl text-silver-600 max-w-3xl mx-auto leading-relaxed">
+              Ready to transform your vision into reality? Contact Silverlining Consulting Limited today 
+              and let's discuss how we can support your next project.
             </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="flex items-center justify-center space-x-3">
-                <Mail className="w-6 h-6" />
-                <span>silverliningconsult@gmail.com</span>
-              </div>
-              <div className="flex items-center justify-center space-x-3">
-                <Phone className="w-6 h-6" />
-                <span>call +254726784506</span>
-              </div>
-              <div className="flex items-center justify-center space-x-3">
-                <Globe className="w-6 h-6" />
-                <span>https://silverlining-consultancy.web.app</span>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Contact Information */}
+            <div className="animate-fade-in">
+              <div className="space-y-8">
+                <div>
+                  <h3 className="font-serif font-bold text-2xl text-primary mb-6">
+                    Contact Information
+                  </h3>
+                  <div className="space-y-4">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Mail className="w-6 h-6 text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-primary mb-1">Email Address</h4>
+                        <p className="text-silver-600">silverliningconsult@gmail.com</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Phone className="w-6 h-6 text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-primary mb-1">Phone Number</h4>
+                        <p className="text-silver-600">+254726784506</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Globe className="w-6 h-6 text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-primary mb-1">Website</h4>
+                        <p className="text-silver-600">silverlining-consultancy.web.app</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <MapPin className="w-6 h-6 text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-primary mb-1">Service Areas</h4>
+                        <p className="text-silver-600">Eastern & Southern Africa</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="bg-gradient-to-br from-primary/5 to-primary/10 p-6 rounded-lg">
+                  <h4 className="font-semibold text-primary mb-3">Why Choose Us?</h4>
+                  <ul className="space-y-2 text-silver-600">
+                    <li className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-gold-500 flex-shrink-0" />
+                      <span>20+ years of proven experience</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-gold-500 flex-shrink-0" />
+                      <span>500+ successful events managed</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-gold-500 flex-shrink-0" />
+                      <span>98% client satisfaction rate</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-gold-500 flex-shrink-0" />
+                      <span>Regional expertise across Africa</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
-                Schedule Free Consultation
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-primary">
-                Learn More About Us
-              </Button>
+            {/* Contact Form */}
+            <div className="animate-fade-in">
+              <ContactForm />
+            </div>
+          </div>
+          
+          <div className="text-center mt-16">
+            <div className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground rounded-lg p-8">
+              <h3 className="font-serif font-bold text-2xl mb-4">
+                Ready to Get Started?
+              </h3>
+              <p className="text-lg mb-6 text-primary-foreground/90">
+                Let's discuss your project and create something amazing together.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
+                  Schedule Free Consultation
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+                <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-primary">
+                  Download Our Brochure
+                </Button>
+              </div>
             </div>
           </div>
         </div>

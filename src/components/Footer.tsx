@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, Phone, MapPin, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Twitter, Globe } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -11,15 +11,15 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 bg-gradient-to-br from-silver-300 to-silver-500 rounded-full flex items-center justify-center">
-                <span className="text-primary font-bold text-sm">SL</span>
+                <span className="text-primary font-bold text-sm">SLC</span>
               </div>
               <span className="font-serif font-bold text-xl">
                 Silverlining Consulting
               </span>
             </div>
             <p className="text-silver-200 mb-6 max-w-md">
-              Empowering organizations through expert event management, facilitation, 
-              and coaching services. Like the African three-legged stool, we provide 
+              Your ideas crystallized. Empowering organizations through expert event management, 
+              facilitation, and coaching services. Like the African three-legged stool, we provide 
               stability, balance, and strength to your business endeavors.
             </p>
             <div className="flex space-x-4">
@@ -44,17 +44,17 @@ const Footer = () => {
             <ul className="space-y-2 text-silver-200">
               <li>
                 <a href="#services" className="hover:text-white transition-colors duration-200">
-                  Event Management
+                  Event Planning & Management
                 </a>
               </li>
               <li>
                 <a href="#services" className="hover:text-white transition-colors duration-200">
-                  Facilitation
+                  Training & Workshop Facilitation
                 </a>
               </li>
               <li>
                 <a href="#services" className="hover:text-white transition-colors duration-200">
-                  Coaching
+                  Leadership & Team Coaching
                 </a>
               </li>
             </ul>
@@ -66,15 +66,15 @@ const Footer = () => {
             <ul className="space-y-3 text-silver-200">
               <li className="flex items-center space-x-2">
                 <Mail size={16} />
-                <span>info@silverliningconsulting.com</span>
+                <span>silverliningconsult@gmail.com</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone size={16} />
-                <span>+1 (555) 123-4567</span>
+                <span>+254726784506</span>
               </li>
               <li className="flex items-center space-x-2">
-                <MapPin size={16} />
-                <span>123 Business Ave, Suite 100</span>
+                <Globe size={16} />
+                <span>silverlining-consultancy.web.app</span>
               </li>
             </ul>
           </div>

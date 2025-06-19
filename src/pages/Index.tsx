@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Calendar, Users, Target, Heart, Shield, Lightbulb, ArrowRight, CheckCircle, Globe, Mail, Phone, MapPin } from 'lucide-react';
 import Header from '@/components/Header';
@@ -12,6 +11,8 @@ import ExperienceTimeline from '@/components/ExperienceTimeline';
 import ContactForm from '@/components/ContactForm';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import PhotoPortfolio from '@/components/PhotoPortfolio';
+import ProcessSection from '@/components/ProcessSection';
 
 const Index = () => {
   const services = [
@@ -216,6 +217,9 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Process Section */}
+      <ProcessSection />
+
       {/* Values Section */}
       <section id="values" className="section-padding gradient-bg">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -256,6 +260,9 @@ const Index = () => {
           <ExperienceTimeline />
         </div>
       </section>
+
+      {/* Photo Portfolio Section */}
+      <PhotoPortfolio />
 
       {/* Client Logos Section */}
       <section className="section-padding gradient-bg">

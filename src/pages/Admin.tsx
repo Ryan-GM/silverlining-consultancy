@@ -16,11 +16,11 @@ interface ContactSubmission {
   id: string;
   name: string;
   email: string;
-  company: string;
+  company: string | null;
   service: string;
   message: string;
-  status: 'new' | 'in_progress' | 'resolved';
-  admin_notes: string;
+  status: string | null;
+  admin_notes: string | null;
   created_at: string;
   updated_at: string;
 }

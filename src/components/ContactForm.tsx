@@ -7,6 +7,8 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Send } from 'lucide-react';
+import { supabase } from '@/integrations/supabase/client';
+import { useToast } from '@/hooks/use-toast';
 
 type FormData = {
   name: string;
@@ -17,19 +19,56 @@ type FormData = {
 };
 
 const ContactForm = () => {
-  const { register, handleSubmit, reset, formState: { errors } } = useForm<FormData>();
+  const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm<FormData>();
+  const { toast } = useToast();
 
-  const onSubmit = (data: FormData) => {
-    // For now, just log the data - in a real app, you'd send this to your backend
-    console.log('Contact form submitted:', data);
-    
-    // Create mailto link with form data
-    const subject = `Inquiry about ${data.service} - ${data.company}`;
-    const body = `Name: ${data.name}\nEmail: ${data.email}\nCompany: ${data.company}\nService: ${data.service}\n\nMessage:\n${data.message}`;
-    const mailtoLink = `mailto:silverliningconsult@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-    window.location.href = mailtoLink;
-    reset();
+  const onSubmit = async (data: FormData) => {
+    try {
+      console.log('Submitting contact form:', data);
+      
+      // Save to database
+      const { error } = await supabase
+        .from('contact_submissions')
+        .insert([{
+          name: data.name,
+          email: data.email,
+          company: data.company || null,
+          service: data.service,
+          message: data.message
+        }]);
+
+      if (error) {
+        console.error('Error saving contact submission:', error);
+        throw error;
+      }
+
+      // Show success message
+      toast({
+        title: "Message sent successfully!",
+        description: "Thank you for your inquiry. We'll get back to you soon.",
+      });
+
+      // Reset form
+      reset();
+      
+      // Also create mailto link as backup
+      const subject = `Inquiry about ${data.service} - ${data.company}`;
+      const body = `Name: ${data.name}\nEmail: ${data.email}\nCompany: ${data.company}\nService: ${data.service}\n\nMessage:\n${data.message}`;
+      const mailtoLink = `mailto:silverliningconsult@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      
+      // Optional: Open mailto after a short delay
+      setTimeout(() => {
+        window.open(mailtoLink, '_blank');
+      }, 1000);
+      
+    } catch (error) {
+      console.error('Error submitting contact form:', error);
+      toast({
+        title: "Error sending message",
+        description: "There was a problem sending your message. Please try again.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
@@ -117,8 +156,8 @@ const ContactForm = () => {
             )}
           </div>
 
-          <Button type="submit" size="lg" className="w-full">
-            Send Message
+          <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+            {isSubmitting ? 'Sending...' : 'Send Message'}
             <Send className="ml-2 w-4 h-4" />
           </Button>
         </form>

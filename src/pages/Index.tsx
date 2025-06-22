@@ -104,6 +104,18 @@ const Index = () => {
                   Schedule Consultation
                 </Button>
               </div>
+              
+              {/* Admin Access Link */}
+              <div className="mt-8">
+                <Button 
+                  variant="ghost" 
+                  size="sm" 
+                  onClick={() => window.location.href = '/auth'}
+                  className="text-sm text-silver-500 hover:text-primary"
+                >
+                  Admin Access →
+                </Button>
+              </div>
             </div>
             
             <div className="animate-slide-in-right">

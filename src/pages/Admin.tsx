@@ -32,7 +32,7 @@ const Admin = () => {
   const [loading, setLoading] = useState(true);
   const [selectedSubmission, setSelectedSubmission] = useState<ContactSubmission | null>(null);
   const [adminNotes, setAdminNotes] = useState('');
-  const [status, setStatus] = useState<'new' | 'in_progress' | 'resolved'>('new');
+  const [status, setStatus] = useState<string>('new');
   const navigate = useNavigate();
   const { toast } = useToast();
 
@@ -136,7 +136,7 @@ const Admin = () => {
     }
   };
 
-  const getStatusColor = (status: string) => {
+  const getStatusColor = (status: string | null) => {
     switch (status) {
       case 'new': return 'bg-blue-500';
       case 'in_progress': return 'bg-yellow-500';
@@ -200,14 +200,14 @@ const Admin = () => {
                         onClick={() => {
                           setSelectedSubmission(submission);
                           setAdminNotes(submission.admin_notes || '');
-                          setStatus(submission.status);
+                          setStatus(submission.status || 'new');
                         }}
                       >
                         <div className="flex justify-between items-start mb-2">
                           <div className="flex items-center space-x-3">
                             <h3 className="font-semibold text-gray-900">{submission.name}</h3>
                             <Badge className={getStatusColor(submission.status)}>
-                              {submission.status.replace('_', ' ')}
+                              {(submission.status || 'new').replace('_', ' ')}
                             </Badge>
                           </div>
                           <span className="text-sm text-gray-500">
@@ -282,7 +282,7 @@ const Admin = () => {
 
                   <div>
                     <Label htmlFor="status">Status</Label>
-                    <Select value={status} onValueChange={(value: any) => setStatus(value)}>
+                    <Select value={status} onValueChange={setStatus}>
                       <SelectTrigger>
                         <SelectValue />
                       </SelectTrigger>

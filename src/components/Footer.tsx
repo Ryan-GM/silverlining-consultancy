@@ -9,10 +9,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-silver-300 to-silver-500 rounded-full flex items-center justify-center">
-                <span className="text-primary font-bold text-sm">SLC</span>
-              </div>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src="/lovable-uploads/37d348c6-8409-42f0-ab8b-740d20ce6b50.png" 
+                alt="Silverlining Consulting Logo" 
+                className="h-8 w-auto filter brightness-0 invert"
+              />
               <span className="font-serif font-bold text-xl">
                 Silverlining Consulting
               </span>
@@ -97,6 +99,14 @@ const Footer = () => {
                 className="text-silver-300 hover:text-white text-sm transition-colors duration-200"
               >
                 Terms of Service
+              </a>
+              {/* Hidden admin access - only accessible by direct URL */}
+              <a
+                href="/auth"
+                className="text-silver-600 hover:text-silver-400 text-xs transition-colors duration-200 opacity-30"
+                title="Admin"
+              >
+                •
               </a>
             </div>
           </div>

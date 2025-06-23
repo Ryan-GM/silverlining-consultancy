@@ -20,11 +20,13 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-silver-600 to-silver-800 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">SL</span>
-              </div>
-              <span className="font-serif font-bold text-xl text-primary">
+            <div className="flex items-center space-x-3">
+              <img 
+                src="/lovable-uploads/37d348c6-8409-42f0-ab8b-740d20ce6b50.png" 
+                alt="Silverlining Consulting Logo" 
+                className="h-12 w-auto"
+              />
+              <span className="font-serif font-bold text-xl text-primary hidden sm:block">
                 Silverlining Consulting
               </span>
             </div>
@@ -45,8 +47,11 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-primary hover:bg-primary/90">
-              Get Started
+            <Button 
+              className="bg-primary hover:bg-primary/90"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Schedule Consultation
             </Button>
           </div>
 
@@ -75,8 +80,14 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <Button className="mt-4 mx-2 bg-primary hover:bg-primary/90">
-                Get Started
+              <Button 
+                className="mt-4 mx-2 bg-primary hover:bg-primary/90"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                Schedule Consultation
               </Button>
             </nav>
           </div>

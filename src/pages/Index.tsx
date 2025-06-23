@@ -9,6 +9,7 @@ import StoolIllustration from '@/components/StoolIllustration';
 import ClientLogos from '@/components/ClientLogos';
 import ExperienceTimeline from '@/components/ExperienceTimeline';
 import ContactForm from '@/components/ContactForm';
+import ConsultationBooking from '@/components/ConsultationBooking';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import PhotoPortfolio from '@/components/PhotoPortfolio';
@@ -100,21 +101,7 @@ const Index = () => {
                   Discover Our Services
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
-                <Button variant="outline" size="lg" className="text-lg px-8 py-3 border-primary text-primary hover:bg-primary hover:text-white">
-                  Schedule Consultation
-                </Button>
-              </div>
-              
-              {/* Admin Access Link */}
-              <div className="mt-8">
-                <Button 
-                  variant="ghost" 
-                  size="sm" 
-                  onClick={() => window.location.href = '/auth'}
-                  className="text-sm text-silver-500 hover:text-primary"
-                >
-                  Admin Access →
-                </Button>
+                <ConsultationBooking />
               </div>
             </div>
             
@@ -351,7 +338,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section - Updated */}
       <section id="contact" className="section-padding bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in">
@@ -454,10 +441,7 @@ const Index = () => {
                 Let's discuss your project and create something amazing together.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
-                  Schedule Free Consultation
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Button>
+                <ConsultationBooking />
                 <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-primary">
                   Download Our Brochure
                 </Button>

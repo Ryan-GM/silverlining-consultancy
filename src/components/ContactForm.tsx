@@ -54,7 +54,7 @@ const ContactForm = () => {
       // Also create mailto link as backup
       const subject = `Inquiry about ${data.service} - ${data.company}`;
       const body = `Name: ${data.name}\nEmail: ${data.email}\nCompany: ${data.company}\nService: ${data.service}\n\nMessage:\n${data.message}`;
-      const mailtoLink = `mailto:silverliningconsult@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const mailtoLink = `mailto:ryanmunge88@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       
       // Optional: Open mailto after a short delay
       setTimeout(() => {

@@ -75,7 +75,7 @@ Time: ${selectedTime}
 Message: ${formData.message}
       `;
 
-      const mailtoLink = `mailto:silverliningconsult@gmail.com?subject=New Consultation Booking - ${format(selectedDate, 'PPP')} at ${selectedTime}&body=${encodeURIComponent(emailBody)}`;
+      const mailtoLink = `mailto:ryanmunge88@gmail.com?subject=New Consultation Booking - ${format(selectedDate, 'PPP')} at ${selectedTime}&body=${encodeURIComponent(emailBody)}`;
       window.open(mailtoLink, '_blank');
 
       toast({

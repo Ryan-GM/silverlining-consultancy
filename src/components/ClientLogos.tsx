@@ -5,32 +5,32 @@ const ClientLogos = () => {
   const clients = [
     {
       name: "USAID",
-      logo: "/lovable-uploads/0a443dd0-121d-4a21-b598-aaf651ee7278.png",
+      logo: "/client-logos/usaid.png",
       color: "bg-blue-50"
     },
     {
       name: "OXFAM International",
-      logo: "/lovable-uploads/37d348c6-8409-42f0-ab8b-740d20ce6b50.png",
+      logo: "/client-logos/oxfam_international_logo.jpeg",
       color: "bg-green-50"
     },
     {
       name: "IGAD",
-      logo: "/lovable-uploads/4c8e5f2a-9b3d-4e1a-8f7c-2d6b9a5e3c8f.png",
+      logo: "/client-logos/IGAD-Communique-1030x535.jpg",
       color: "bg-blue-50"
     },
     {
       name: "ReosPartners",
-      logo: "/lovable-uploads/7f9a2b5c-3e8d-4a1b-9c6f-5d2e8a7b4c9e.png",
+      logo: "/client-logos/reos.png",
       color: "bg-orange-50"
     },
     {
       name: "NOVEL Technologies",
-      logo: "/lovable-uploads/8e4f1c9d-2a6b-4d3e-9f8c-1b5a7e3d9c2f.png",
+      logo: "/client-logos/novel.jpeg",
       color: "bg-blue-50"
     },
     {
       name: "Arizona State University",
-      logo: "/lovable-uploads/9d2c5f8e-4b7a-4e2d-8f1c-3a6e9b4d7c1e.png",
+      logo: "/client-logos/arizona.jpeg",
       color: "bg-red-50"
     }
   ];
@@ -51,7 +51,7 @@ const ClientLogos = () => {
               <img 
                 src={client.logo} 
                 alt={`${client.name} logo`}
-                className="max-h-16 max-w-full object-contain"
+                className="max-h-12 max-w-full object-contain"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
                   target.style.display = 'none';

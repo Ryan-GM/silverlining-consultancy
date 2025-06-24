@@ -17,7 +17,7 @@ const PhotoPortfolio = () => {
     },
     {
       id: 3,
-      src: "/portfolio/Bright-Rwaminarama-arrival.jpg",
+      src: "/portfolio/USAID-feed-the-future.jpg",
       alt: "Workshop Training"
     },
     {

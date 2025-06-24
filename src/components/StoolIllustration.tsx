@@ -5,7 +5,7 @@ const StoolIllustration = () => {
   return (
     <div className="flex items-center justify-center p-8 animate-float">
       <img
-        src="/lovable-uploads/Copilot_20250624_164123.png"
+        src="/lovable-uploads/Copilot.png"
         alt="Silverlining Consulting Ltd - Three-legged stool representing our core services: Project and Event Management, Meetings, Workshops and Conferences, and Coaching & Mercy's fireplace"
         width="400"
         height="400"

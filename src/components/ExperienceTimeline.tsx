@@ -8,92 +8,68 @@ const ExperienceTimeline = () => {
     {
       date: "Jan - Mar 2025",
       title: "MSSP-SoCHA-DRC",
-      description: "Support USAID/DRC Mission's co-creation with local partners. Focus capacity building, facilitation tools to enhance USAID's co-creation process.",
+      description: "Support USAID/DRC Mission's co-creation with local partners. Focus: capacity building, facilitation of a peer-to-peer sharing workshop, and development of practical tools to enhance USAID's co-creation processes.",
       location: "DRC"
     },
     {
       date: "Dec 2024",
-      title: "USAID-Sudan Annual Portfolio Review",
+      title: "USAID-Sudan",
       description: "Organized and led agenda co-creation, facilitating a 2-day hybrid Annual Portfolio Review for the USAID Sudan Mission with 50 participants in-house and 10 online.",
       location: "Sudan"
     },
     {
       date: "Oct 2024 - Jan 2025",
-      title: "Coaching.com (CDC-USA) Certification Program",
-      description: "Co-trainer for Navigating Transitions Coach Certification online course with 300+ participants over 3 months. Included 8 module delivery, 3 Q&A sessions, and 1 integration session.",
+      title: "Coaching.com (CDC-USA)",
+      description: "Co-trainer for Navigating Transitions Coach Certification online course with 300+ participants over 3 months. Included 8 module sessions, 3 Q&A sessions and 1 integration session.",
       location: "USA"
     },
     {
       date: "Jul - Nov 2024",
-      title: "Oxfam International Global Gathering",
+      title: "Oxfam International",
       description: "Planned and coordinated travel logistics, including a gala dinner and dance, for Oxfam's Global Gathering of 70+ senior leaders from over 20 countries.",
       location: "Kenya"
     },
     {
       date: "Feb - Apr 2024",
-      title: "Reos Partners Diaspora Summit",
+      title: "Reos Partners, SA",
       description: "Event planning and travel logistics for 50 delegates from the diaspora, Horn of Africa, and South Africa regions.",
       location: "South Africa"
     },
     {
       date: "Dec 2023 - Jan 2024",
-      title: "Arizona State University (ASU) YALI Program",
+      title: "Arizona State University (ASU), USA",
       description: "Designed, coordinated suppliers, and facilitated an Africa-wide team learning event for YALI Legacy & Localization with 60 participants from Eastern and Western Africa.",
       location: "Rwanda"
     },
     {
       date: "Nov - Dec 2023",
-      title: "YALI Legacy & Localization Strategy Workshop",
+      title: "Young African Leaders Initiative Legacy & Localization (YALI LL)",
       description: "Co-facilitated a human-centered strategy and design work plan co-creation workshop with over 100 global stakeholders.",
       location: "Global"
     },
     {
       date: "Aug 2023",
-      title: "USAID K.L.C Devolution Conference",
+      title: "SoCHA LLC",
       description: "Coordinated production for the Bi-annual Devolution 2023 Report. Managed note-taking in plenary sessions and over five breakout groups daily for 5000+ delegates in Eldoret, Kenya.",
       location: "Kenya"
     },
     {
-      date: "Jun 2023",
-      title: "East African Leadership Summit",
-      description: "Facilitated cross-border leadership development program for 200+ participants from Kenya, Uganda, Tanzania, and Rwanda focusing on regional collaboration.",
-      location: "Tanzania"
+      date: "Jul - Sept 2023",
+      title: "PCEA Loresho Church",
+      description: "Designed and facilitated strategic planning and team-building workshops for the board and leadership teams.",
+      location: "Kenya"
     },
     {
       date: "Mar 2023",
-      title: "Corporate Governance Workshop Series",
-      description: "Designed and delivered a 5-part workshop series on corporate governance for board members of major East African corporations.",
+      title: "AFIDEP",
+      description: "Designed and facilitated a work plan co-creation workshop for USAID's BUILDING CAPACITY FOR INTEGRATED FP/RH AND PED ACTION (BUILD) Project with 70+ participants from East African countries.",
       location: "Kenya"
     },
     {
-      date: "Jan 2023",
-      title: "NGO Capacity Building Initiative",
-      description: "Led comprehensive capacity building program for 15 local NGOs focusing on project management, fundraising, and organizational development.",
-      location: "Uganda"
-    },
-    {
-      date: "Oct 2022",
-      title: "SADC Regional Conference",
-      description: "Coordinated logistics and facilitated sessions for Southern African Development Community conference with 300+ delegates from 16 member states.",
-      location: "Botswana"
-    },
-    {
-      date: "Jul 2022",
-      title: "Women Leadership Empowerment Program",
-      description: "Designed and facilitated 3-day intensive leadership program for 80 women entrepreneurs across Eastern Africa.",
+      date: "Dec 2022 - Oct 2023",
+      title: "Oxfam International",
+      description: "Event planning for Oxfam's Global Gathering of 100+ senior leaders from over 20 countries.",
       location: "Kenya"
-    },
-    {
-      date: "Apr 2022",
-      title: "Youth Development Summit",
-      description: "Organized and managed pan-African youth summit bringing together 150 young leaders from 20 African countries for skills development and networking.",
-      location: "South Africa"
-    },
-    {
-      date: "2021",
-      title: "COVID-19 Response Training Series",
-      description: "Adapted training methodologies for virtual delivery, conducting over 50 online workshops for organizations transitioning to remote work during the pandemic.",
-      location: "Virtual/Regional"
     }
   ];
 

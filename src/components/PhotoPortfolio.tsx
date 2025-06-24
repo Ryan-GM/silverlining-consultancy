@@ -7,45 +7,45 @@ const PhotoPortfolio = () => {
   const portfolioImages = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=300&fit=crop",
-      alt: "Oxfam International Global Gathering",
-      title: "Oxfam International Global Gathering",
-      description: "Planned and coordinated travel logistics, including a gala dinner and dance, for Oxfam's Global Gathering of 70+ senior leaders from over 20 countries in Kenya."
+      src: "/portfolio/group-photo-1.png",
+      alt: "Conference Group Photo",
+      title: "Professional Conference"
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=300&fit=crop",
-      alt: "USAID Sudan Annual Portfolio Review",
-      title: "USAID Sudan Annual Portfolio Review",
-      description: "Organized and led agenda co-creation, facilitating a 2-day hybrid Annual Portfolio Review for the USAID Sudan Mission with 50 participants in-house and 10 online."
+      src: "/portfolio/conference-hall-1.png",
+      alt: "Conference Hall Session",
+      title: "Conference Hall Session"
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=400&h=300&fit=crop",
-      alt: "Workshop in Tanzania",
-      title: "East African Leadership Summit - Tanzania",
-      description: "Facilitated cross-border leadership development program for 200+ participants from Kenya, Uganda, Tanzania, and Rwanda focusing on regional collaboration."
+      src: "/portfolio/workshop-1.png",
+      alt: "Workshop Training",
+      title: "Training Workshop"
     },
     {
       id: 4,
-      src: "https://images.unsplash.com/photo-1559223607-a43c990c692c?w=400&h=300&fit=crop",
-      alt: "Training Session in Uganda",
-      title: "NGO Capacity Building Initiative - Uganda",
-      description: "Led comprehensive capacity building program for 15 local NGOs focusing on project management, fundraising, and organizational development."
+      src: "/portfolio/usaid-group-1.png",
+      alt: "USAID Group Meeting",
+      title: "USAID Group Meeting"
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&h=300&fit=crop",
-      alt: "Leadership Retreat Rwanda",
-      title: "ASU YALI Program - Rwanda",
-      description: "Designed, coordinated suppliers, and facilitated an Africa-wide team learning event for YALI Legacy & Localization with 60 participants from Eastern and Western Africa."
+      src: "/portfolio/usaid-meeting-1.png",
+      alt: "USAID Conference",
+      title: "USAID Conference"
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&h=300&fit=crop",
-      alt: "Corporate Training Session Kenya",
-      title: "USAID K.L.C Devolution Conference - Kenya",
-      description: "Coordinated production for the Bi-annual Devolution 2023 Report. Managed note-taking in plenary sessions and over five breakout groups daily for 5000+ delegates in Eldoret, Kenya."
+      src: "/portfolio/presentation-1.png",
+      alt: "Leadership Presentation",
+      title: "Leadership Presentation"
+    },
+    {
+      id: 7,
+      src: "/portfolio/yali-group-1.png",
+      alt: "YALI Group Celebration",
+      title: "YALI Group Celebration"
     }
   ];
 
@@ -88,9 +88,6 @@ const PhotoPortfolio = () => {
                   <h3 className="font-semibold text-lg text-primary mb-3 leading-tight">
                     {image.title}
                   </h3>
-                  <p className="text-silver-600 text-sm leading-relaxed">
-                    {image.description}
-                  </p>
                 </CardContent>
               </Card>
             </div>

@@ -5,12 +5,12 @@ const ClientLogos = () => {
   const clients = [
     {
       name: "USAID",
-      logo: "/client-logos/usaid.png",
+      logo: "/lovable-uploads/0a443dd0-121d-4a21-b598-aaf651ee7278.png",
       color: "bg-blue-50"
     },
     {
       name: "OXFAM International",
-      logo: "/client-logos/oxfam_international_logo.jpeg",
+      logo: "/lovable-uploads/37d348c6-8409-42f0-ab8b-740d20ce6b50.png",
       color: "bg-green-50"
     },
     {
@@ -41,7 +41,7 @@ const ClientLogos = () => {
         {clients.map((client, index) => (
           <div 
             key={client.name}
-            className={`${client.color} rounded-lg p-6 shadow-sm hover:shadow-md transition-all duration-300 w-full h-24 flex items-center justify-center border border-gray-100 animate-float hover:scale-105`}
+            className={`${client.color} rounded-lg p-8 shadow-sm hover:shadow-md transition-all duration-300 w-full h-32 flex items-center justify-center border border-gray-100 animate-float hover:scale-105`}
             style={{ 
               animationDelay: `${index * 0.3}s`,
               animationDuration: `${5 + index * 0.2}s`
@@ -51,7 +51,7 @@ const ClientLogos = () => {
               <img 
                 src={client.logo} 
                 alt={`${client.name} logo`}
-                className="max-h-12 max-w-full object-contain"
+                className="max-h-20 max-w-full object-contain"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
                   target.style.display = 'none';

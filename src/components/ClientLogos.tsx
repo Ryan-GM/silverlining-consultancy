@@ -15,7 +15,7 @@ const ClientLogos = () => {
     },
     {
       name: "IGAD",
-      logo: "https://igad.int/wp-content/uploads/2020/07/IGAD-LOGO.png",
+      logo: "/client-logos/igad-logo.png",
       color: "bg-blue-50"
     },
     {
@@ -47,13 +47,12 @@ const ClientLogos = () => {
               animationDuration: `${5 + index * 0.2}s`
             }}
           >
-            {client.logo ? (
+            <div className="flex items-center justify-center w-full h-full">
               <img 
                 src={client.logo} 
                 alt={`${client.name} logo`}
                 className="max-h-12 max-w-full object-contain"
                 onError={(e) => {
-                  // Fallback to text if image fails to load
                   const target = e.target as HTMLImageElement;
                   target.style.display = 'none';
                   const parent = target.parentElement;
@@ -62,9 +61,7 @@ const ClientLogos = () => {
                   }
                 }}
               />
-            ) : (
-              <span className="text-primary font-bold text-sm text-center">{client.name}</span>
-            )}
+            </div>
           </div>
         ))}
       </div>

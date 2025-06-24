@@ -7,13 +7,43 @@ const PhotoPortfolio = () => {
   const portfolioImages = [
     {
       id: 1,
-      src: "/lovable-uploads/37d348c6-8409-42f0-ab8b-740d20ce6b50.png",
-      alt: "Conference Group Photo"
+      src: "/portfolio/image-1.jpg",
+      alt: "Professional Event"
     },
     {
       id: 2,
-      src: "/lovable-uploads/0a443dd0-121d-4a21-b598-aaf651ee7278.png",
-      alt: "Conference Hall Session"
+      src: "/portfolio/image-2.jpg",
+      alt: "Conference Session"
+    },
+    {
+      id: 3,
+      src: "/portfolio/image-3.jpg",
+      alt: "Workshop Training"
+    },
+    {
+      id: 4,
+      src: "/portfolio/image-4.jpg",
+      alt: "Team Meeting"
+    },
+    {
+      id: 5,
+      src: "/portfolio/image-5.jpg",
+      alt: "Leadership Session"
+    },
+    {
+      id: 6,
+      src: "/portfolio/image-6.jpg",
+      alt: "Group Discussion"
+    },
+    {
+      id: 7,
+      src: "/portfolio/image-7.jpg",
+      alt: "Networking Event"
+    },
+    {
+      id: 8,
+      src: "/portfolio/image-8.jpg",
+      alt: "Coaching Session"
     }
   ];
 
@@ -29,7 +59,7 @@ const PhotoPortfolio = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {portfolioImages.map((image, index) => (
             <div
               key={image.id}

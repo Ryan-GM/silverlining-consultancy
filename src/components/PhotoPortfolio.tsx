@@ -7,45 +7,13 @@ const PhotoPortfolio = () => {
   const portfolioImages = [
     {
       id: 1,
-      src: "/portfolio/group-photo-1.png",
-      alt: "Conference Group Photo",
-      title: "Professional Conference"
+      src: "/lovable-uploads/37d348c6-8409-42f0-ab8b-740d20ce6b50.png",
+      alt: "Conference Group Photo"
     },
     {
       id: 2,
-      src: "/portfolio/conference-hall-1.png",
-      alt: "Conference Hall Session",
-      title: "Conference Hall Session"
-    },
-    {
-      id: 3,
-      src: "/portfolio/workshop-1.png",
-      alt: "Workshop Training",
-      title: "Training Workshop"
-    },
-    {
-      id: 4,
-      src: "/portfolio/usaid-group-1.png",
-      alt: "USAID Group Meeting",
-      title: "USAID Group Meeting"
-    },
-    {
-      id: 5,
-      src: "/portfolio/usaid-meeting-1.png",
-      alt: "USAID Conference",
-      title: "USAID Conference"
-    },
-    {
-      id: 6,
-      src: "/portfolio/presentation-1.png",
-      alt: "Leadership Presentation",
-      title: "Leadership Presentation"
-    },
-    {
-      id: 7,
-      src: "/portfolio/yali-group-1.png",
-      alt: "YALI Group Celebration",
-      title: "YALI Group Celebration"
+      src: "/lovable-uploads/0a443dd0-121d-4a21-b598-aaf651ee7278.png",
+      alt: "Conference Hall Session"
     }
   ];
 
@@ -57,16 +25,19 @@ const PhotoPortfolio = () => {
             Our Work in Pictures
           </h2>
           <p className="text-xl text-silver-600 max-w-3xl mx-auto leading-relaxed">
-            Real moments from our successful events, workshops, and coaching sessions across Eastern and Southern Africa - delivering transformative experiences that make a lasting impact.
+            Real moments from our successful events, workshops, and coaching sessions across Eastern and Southern Africa.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {portfolioImages.map((image, index) => (
             <div
               key={image.id}
-              className="animate-scale-in group"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="animate-scale-in animate-float group"
+              style={{ 
+                animationDelay: `${index * 0.1}s`,
+                animationDuration: `${6 + index * 0.5}s`
+              }}
             >
               <Card className="overflow-hidden border-silver-200 hover:shadow-xl transition-all duration-300 group-hover:scale-[1.02]">
                 <div className="relative overflow-hidden">
@@ -84,11 +55,6 @@ const PhotoPortfolio = () => {
                     </div>
                   </div>
                 </div>
-                <CardContent className="p-5">
-                  <h3 className="font-semibold text-lg text-primary mb-3 leading-tight">
-                    {image.title}
-                  </h3>
-                </CardContent>
               </Card>
             </div>
           ))}

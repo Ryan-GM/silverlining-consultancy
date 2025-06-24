@@ -5,12 +5,12 @@ const ClientLogos = () => {
   const clients = [
     {
       name: "USAID",
-      logo: "https://www.usaid.gov/sites/default/files/2022-05/USAID_Identity_Logo_Lockup_2color_Blue_RGB.png",
+      logo: "/client-logos/usaid-logo.png",
       color: "bg-blue-50"
     },
     {
       name: "OXFAM International",
-      logo: "https://www.oxfam.org/sites/www.oxfam.org/files/file_attachments/oxfam-logo-rgb-white_0.png",
+      logo: "/client-logos/oxfam-logo.png",
       color: "bg-green-50"
     },
     {
@@ -20,17 +20,17 @@ const ClientLogos = () => {
     },
     {
       name: "ReosPartners",
-      logo: null,
+      logo: "/client-logos/reos-logo.png",
       color: "bg-orange-50"
     },
     {
       name: "NOVEL Technologies",
-      logo: null,
+      logo: "/client-logos/novel-logo.png",
       color: "bg-blue-50"
     },
     {
       name: "Arizona State University",
-      logo: "https://www.asu.edu/asuthemes/4.0/assets/arizona-state-university-logo.png",
+      logo: "/client-logos/asu-logo.png",
       color: "bg-red-50"
     }
   ];
@@ -41,7 +41,11 @@ const ClientLogos = () => {
         {clients.map((client, index) => (
           <div 
             key={client.name}
-            className={`${client.color} rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 w-full h-24 flex items-center justify-center border border-gray-100`}
+            className={`${client.color} rounded-lg p-6 shadow-sm hover:shadow-md transition-all duration-300 w-full h-24 flex items-center justify-center border border-gray-100 animate-float hover:scale-105`}
+            style={{ 
+              animationDelay: `${index * 0.3}s`,
+              animationDuration: `${5 + index * 0.2}s`
+            }}
           >
             {client.logo ? (
               <img 

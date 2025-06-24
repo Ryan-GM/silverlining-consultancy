@@ -5,32 +5,32 @@ const ClientLogos = () => {
   const clients = [
     {
       name: "USAID",
-      logo: "/client-logos/usaid-logo.png",
+      logo: "/client-logos/usaid.png",
       color: "bg-blue-50"
     },
     {
       name: "OXFAM International",
-      logo: "/client-logos/oxfam-logo.png",
+      logo: "/client-logos/oxfam_international-logo.jpeg",
       color: "bg-green-50"
     },
     {
       name: "IGAD",
-      logo: "/client-logos/igad-logo.png",
+      logo: "/client-logos/IGAD-Communique-1030x535.jpg",
       color: "bg-blue-50"
     },
     {
       name: "ReosPartners",
-      logo: "/client-logos/reos-logo.png",
+      logo: "/client-logos/reos.png",
       color: "bg-orange-50"
     },
     {
       name: "NOVEL Technologies",
-      logo: "/client-logos/novel-logo.png",
+      logo: "/client-logos/novel.jpeg",
       color: "bg-blue-50"
     },
     {
       name: "Arizona State University",
-      logo: "/client-logos/asu-logo.png",
+      logo: "/client-logos/arizona.jpeg",
       color: "bg-red-50"
     }
   ];

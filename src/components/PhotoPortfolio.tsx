@@ -12,7 +12,7 @@ const PhotoPortfolio = () => {
     },
     {
       id: 2,
-      src: "/portfolio/IMG_0991.JPG",
+      src: "/portfolio/IMG_0997.JPG",
       alt: "Conference Session"
     },
     {

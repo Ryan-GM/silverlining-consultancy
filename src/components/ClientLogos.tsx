@@ -5,12 +5,12 @@ const ClientLogos = () => {
   const clients = [
     {
       name: "USAID",
-      logo: "/lovable-uploads/0a443dd0-121d-4a21-b598-aaf651ee7278.png",
+      logo: "/client-logos/usaid.png",
       color: "bg-blue-50"
     },
     {
       name: "OXFAM International",
-      logo: "/lovable-uploads/37d348c6-8409-42f0-ab8b-740d20ce6b50.png",
+      logo: "/client-logos/oxfam_international_logo.jpeg",
       color: "bg-green-50"
     },
     {

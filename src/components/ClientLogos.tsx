@@ -10,7 +10,7 @@ const ClientLogos = () => {
     },
     {
       name: "OXFAM International",
-      logo: "/client-logos/oxfam_international-logo.jpeg",
+      logo: "/client-logos/oxfam_international_logo.jpeg",
       color: "bg-green-50"
     },
     {

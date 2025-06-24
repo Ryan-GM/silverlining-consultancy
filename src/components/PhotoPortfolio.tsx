@@ -7,42 +7,42 @@ const PhotoPortfolio = () => {
   const portfolioImages = [
     {
       id: 1,
-      src: "/portfolio/image-1.jpg",
+      src: "/portfolio/IMG_0859.JPG",
       alt: "Professional Event"
     },
     {
       id: 2,
-      src: "/portfolio/image-2.jpg",
+      src: "/portfolio/IMG_0991.JPG",
       alt: "Conference Session"
     },
     {
       id: 3,
-      src: "/portfolio/image-3.jpg",
+      src: "/portfolio/Bright-Rwaminarama-arrival.jpg",
       alt: "Workshop Training"
     },
     {
       id: 4,
-      src: "/portfolio/image-4.jpg",
+      src: "/portfolio/CAADP-climate-Oct-2011.jpg",
       alt: "Team Meeting"
     },
     {
       id: 5,
-      src: "/portfolio/image-5.jpg",
+      src: "/portfolio/Uganda-members.jpg",
       alt: "Leadership Session"
     },
     {
       id: 6,
-      src: "/portfolio/image-6.jpg",
+      src: "/portfolio/jointIGAD-April-2021.jpg",
       alt: "Group Discussion"
     },
     {
       id: 7,
-      src: "/portfolio/image-7.jpg",
+      src: "/portfolio/Non-stateActors(NSA)-Kigali,Rwanda.png",
       alt: "Networking Event"
     },
     {
       id: 8,
-      src: "/portfolio/image-8.jpg",
+      src: "/portfolio/Non-stateActors(NSA).jpg",
       alt: "Coaching Session"
     }
   ];

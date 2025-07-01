@@ -26,7 +26,7 @@ const ContactForm = () => {
       console.log('Submitting contact form:', data);
       
       // Using Formspree for form handling
-      const response = await fetch('https://formspree.io/f/xpznqwko', {
+      const response = await fetch('https://formspree.io/f/mkgbyppk', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

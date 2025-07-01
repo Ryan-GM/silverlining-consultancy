@@ -55,7 +55,7 @@ const ClientLogos = () => {
     },
     {
       name: "UNODC",
-      logo: "/client-logos/UNODC logo.png",
+      logo: "/client-logos/UNODC-logo.png",
       color: "bg-white"
     },
     {

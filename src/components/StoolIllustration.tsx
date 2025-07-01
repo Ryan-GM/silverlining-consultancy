@@ -10,6 +10,11 @@ const StoolIllustration = () => {
         width="400"
         height="400"
         className="max-w-full h-auto"
+        style={{
+          filter: 'brightness(1.1) contrast(1.1)',
+          mixBlendMode: 'multiply',
+          background: 'transparent'
+        }}
       />
     </div>
   );

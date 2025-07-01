@@ -84,10 +84,10 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Header />
 
-      {/* Hero Section */}
+      {/* Hero Section - Updated padding-top to accommodate larger header */}
       <section id="home" className="section-padding gradient-bg overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-screen pt-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-screen pt-20">
             <div className="animate-slide-in-left">
               <h1 className="font-serif font-bold text-5xl md:text-6xl lg:text-7xl text-primary mb-6 leading-tight">
                 Your Ideas

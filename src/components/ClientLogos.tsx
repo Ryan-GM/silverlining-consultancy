@@ -45,7 +45,7 @@ const ClientLogos = () => {
     },
     {
       name: "SoCha",
-      logo: "/client-logos/SoCHa-Logo.png",
+      logo: "/client-logos/SoCha-Logo.png",
       color: "bg-white"
     },
     {

@@ -4,8 +4,33 @@ import React from 'react';
 const ClientLogos = () => {
   const clients = [
     {
-      name: "VillageReach",
-      logo: "https://www.villagereach.org/wp-content/uploads/2018/10/VillageReach-logo-tagline-2018.png",
+      name: "IGAD",
+      logo: "/client-logos/IGAD-Communique-1030x535.jpg",
+      color: "bg-white"
+    },
+    {
+      name: "USAID",
+      logo: "/client-logos/usaid.png",
+      color: "bg-white"
+    },
+    {
+      name: "Oxfam_International",
+      logo: "/client-logos/oxfam_international_logo.jpeg",
+      color: "bg-white"
+    },
+    {
+      name: "Arizona",
+      logo: "/client-logos/arizona.jpeg",
+      color: "bg-white"
+    },
+    {
+      name: "Novel Technologies E.A LTD",
+      logo: "/client-logos/novel.jpeg",
+      color: "bg-white"
+    },
+    {
+      name: "Reos Partners",
+      logo: "/client-logos/reos.png",
       color: "bg-white"
     },
     {

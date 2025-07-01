@@ -35,42 +35,47 @@ const ClientLogos = () => {
     },
     {
       name: "AFIDEP",
-      logo: "https://www.afidep.org/wp-content/uploads/2019/06/AFIDEP-Logo.png",
+      logo: "/client-logos/afidep.png",
       color: "bg-white"
     },
     {
       name: "TechChange",
-      logo: "https://www.techchange.org/wp-content/uploads/2020/01/techchange-logo-horizontal.png",
+      logo: "/client-logos/TechChange_.png",
       color: "bg-white"
     },
     {
       name: "SoCha",
-      logo: "https://www.socha.net/wp-content/uploads/2020/01/socha-logo.png",
+      logo: "/client-logos/SoCHa-Logo.png",
       color: "bg-white"
     },
     {
       name: "Council of Governors Kenya",
-      logo: "https://cog.go.ke/images/logo.png",
+      logo: "/client-logos/COG.png",
       color: "bg-white"
     },
     {
       name: "UNODC",
-      logo: "https://www.unodc.org/images/unodc-logo.png",
+      logo: "/client-logos/UNODC logo.png",
       color: "bg-white"
     },
     {
       name: "IREX",
-      logo: "https://www.irex.org/sites/default/files/IREX-logo-horizontal.png",
+      logo: "/client-logos/IREX_.png",
       color: "bg-white"
     },
     {
       name: "DAI",
-      logo: "https://www.dai.com/uploads/DAI-logo-2018.png",
+      logo: "/client-logos/DAI.png",
       color: "bg-white"
     },
     {
       name: "Winrock International",
-      logo: "https://winrock.org/wp-content/uploads/2020/01/winrock-logo.png",
+      logo: "/client-logos/Winrock-logo.png",
+      color: "bg-white"
+    },
+    {
+      name: "Village Reach",
+      logo: "/client-logos/VillageReach_.jpg",
       color: "bg-white"
     }
   ];

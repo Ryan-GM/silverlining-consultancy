@@ -25,7 +25,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <div className="flex items-center space-x-3">
-              <img src="/lovable-uploads/37d348c6-8409-42f0-ab8b-740d20ce6b50.png" alt="Silverlining Consulting Logo" className="h-12 w-auto" />
+              <img src="/lovable-uploads/Copilot-silverlining.png" alt="Silverlining Consulting Logo" className="h-12 w-auto" />
               <span className="font-serif font-bold text-xl text-primary hidden sm:block">Silverlining Consulting LTD</span>
             </div>
           </div>

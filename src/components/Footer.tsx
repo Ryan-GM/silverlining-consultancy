@@ -10,11 +10,6 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <img 
-                src="/lovable-uploads/Copilot-silverlining.png" 
-                alt="Silverlining Consulting Logo" 
-                className="h-12 w-auto brightness-0 invert" 
-              />
               <span className="font-serif font-bold text-xl">
                 Silverlining Consulting LTD
               </span>

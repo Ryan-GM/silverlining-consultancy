@@ -17,16 +17,16 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-silver-200">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          {/* Logo - Increased container height and logo size */}
+        <div className="flex justify-between items-center h-24">
+          {/* Logo - Increased size for better visibility */}
           <div className="flex-shrink-0">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-4">
               <img 
                 src="/lovable-uploads/Copilot-silverlining.png" 
                 alt="Silverlining Consulting Logo" 
-                className="h-16 md:h-18 lg:h-20 w-auto" 
+                className="h-20 md:h-22 lg:h-24 w-auto" 
               />
-              <span className="font-serif font-bold text-xl text-primary hidden sm:block">
+              <span className="font-serif font-bold text-xl md:text-2xl text-primary hidden sm:block">
                 Silverlining Consulting LTD
               </span>
             </div>

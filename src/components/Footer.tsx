@@ -1,115 +1,82 @@
 
 import React from 'react';
-import { Mail, Phone, MapPin, Linkedin, Twitter, Globe } from 'lucide-react';
+import { Facebook, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
+            <div className="flex items-center space-x-3 mb-6">
               <img 
-                src="/lovable-uploads/37d348c6-8409-42f0-ab8b-740d20ce6b50.png" 
+                src="/lovable-uploads/Copilot-silverlining.png" 
                 alt="Silverlining Consulting Logo" 
-                className="h-8 w-auto filter brightness-0 invert"
+                className="h-12 w-auto brightness-0 invert" 
               />
               <span className="font-serif font-bold text-xl">
-                Silverlining Consulting
+                Silverlining Consulting LTD
               </span>
             </div>
-            <p className="text-silver-200 mb-6 max-w-md">
-              Your ideas crystallized. Empowering organizations through expert event management, 
-              facilitation, and coaching services. Like the African three-legged stool, we provide 
-              stability, balance, and strength to your business endeavors.
+            <p className="text-primary-foreground/80 mb-6 leading-relaxed">
+              Transforming visions into reality through innovative event management, 
+              impactful facilitation, and empowering coaching across Eastern and Southern Africa.
             </p>
             <div className="flex space-x-4">
-              <a
-                href="#"
-                className="text-silver-300 hover:text-white transition-colors duration-200"
+              <a 
+                href="https://facebook.com/silverliningconsulting" 
+                className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
+                aria-label="Facebook"
               >
-                <Linkedin size={20} />
+                <Facebook className="w-5 h-5" />
               </a>
-              <a
-                href="#"
-                className="text-silver-300 hover:text-white transition-colors duration-200"
+              <a 
+                href="https://linkedin.com/company/silverlining-consulting" 
+                className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
+                aria-label="LinkedIn"
               >
-                <Twitter size={20} />
+                <Linkedin className="w-5 h-5" />
               </a>
             </div>
           </div>
 
-          {/* Services */}
+          {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Services</h3>
-            <ul className="space-y-2 text-silver-200">
-              <li>
-                <a href="#services" className="hover:text-white transition-colors duration-200">
-                  Event Planning & Management
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="hover:text-white transition-colors duration-200">
-                  Training & Workshop Facilitation
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="hover:text-white transition-colors duration-200">
-                  Leadership & Team Coaching
-                </a>
-              </li>
+            <h3 className="font-semibold text-lg mb-6">Quick Links</h3>
+            <ul className="space-y-3">
+              <li><a href="#home" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Home</a></li>
+              <li><a href="#about" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">About</a></li>
+              <li><a href="#services" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Services</a></li>
+              <li><a href="#values" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Values</a></li>
+              <li><a href="#contact" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Contact</a></li>
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact Info */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Contact</h3>
-            <ul className="space-y-3 text-silver-200">
-              <li className="flex items-center space-x-2">
-                <Mail size={16} />
-                <span>silverliningconsult@gmail.com</span>
-              </li>
-              <li className="flex items-center space-x-2">
-                <Phone size={16} />
-                <span>+254726784506</span>
-              </li>
-              <li className="flex items-center space-x-2">
-                <Globe size={16} />
-                <span>silverlining-consultancy.web.app</span>
-              </li>
-            </ul>
+            <h3 className="font-semibold text-lg mb-6">Contact Info</h3>
+            <div className="space-y-3">
+              <div className="flex items-start space-x-3">
+                <Mail className="w-5 h-5 flex-shrink-0 mt-0.5" />
+                <span className="text-primary-foreground/80">silverliningconsult@gmail.com</span>
+              </div>
+              <div className="flex items-start space-x-3">
+                <Phone className="w-5 h-5 flex-shrink-0 mt-0.5" />
+                <span className="text-primary-foreground/80">+254726784506</span>
+              </div>
+              <div className="flex items-start space-x-3">
+                <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" />
+                <span className="text-primary-foreground/80">Eastern & Southern Africa</span>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="border-t border-silver-600 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-silver-300 text-sm">
-              © 2024 Silverlining Consulting Ltd. All rights reserved.
-            </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <a
-                href="#"
-                className="text-silver-300 hover:text-white text-sm transition-colors duration-200"
-              >
-                Privacy Policy
-              </a>
-              <a
-                href="#"
-                className="text-silver-300 hover:text-white text-sm transition-colors duration-200"
-              >
-                Terms of Service
-              </a>
-              {/* Hidden admin access - only accessible by direct URL */}
-              <a
-                href="/auth"
-                className="text-silver-600 hover:text-silver-400 text-xs transition-colors duration-200 opacity-30"
-                title="Admin"
-              >
-                •
-              </a>
-            </div>
-          </div>
+        <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center">
+          <p className="text-primary-foreground/60">
+            © 2024 Silverlining Consulting Limited. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

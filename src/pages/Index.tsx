@@ -41,7 +41,7 @@ const Index = () => {
     },
     {
       icon: Target,
-      title: "Leadership & Team Coaching",
+      title: "Mercy's fireplace & Team Coaching",
       description: "Empower your leadership with bespoke coaching programs designed for individual and team growth. Our approach fosters confidence, enhances performance, and equips leaders with the tools to thrive in dynamic environments.",
       features: [
         "Executive and leadership coaching",
@@ -87,11 +87,11 @@ const Index = () => {
       {/* Hero Section - Updated padding-top to accommodate larger header */}
       <section id="home" className="section-padding gradient-bg overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-screen pt-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-screen pt-24">
             <div className="animate-slide-in-left">
               <h1 className="font-serif font-bold text-5xl md:text-6xl lg:text-7xl text-primary mb-6 leading-tight">
                 Your Ideas
-                <span className="text-gradient block">Crystallized</span>
+                <span className="text-primary block">Crystallized</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl">
                 Partner with Silverlining Consulting Limited and transform your vision into reality. Get Started Today.

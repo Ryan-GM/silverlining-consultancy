@@ -15,7 +15,7 @@ const ConsultationBooking = () => {
       onClick={handleCalendlyClick}
     >
       <CalendarIcon className="mr-2 w-5 h-5" />
-      Schedule Free Consultation
+      Schedule Coaching Session
     </Button>
   );
 };

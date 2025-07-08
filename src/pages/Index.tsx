@@ -375,7 +375,7 @@ const Index = () => {
                       </div>
                       <div>
                         <h4 className="font-semibold text-primary mb-1">Website</h4>
-                        <p className="text-muted-foreground">silverlining-consultancy.web.app</p>
+                        <p className="text-muted-foreground">silverlining-consultancy.vercel.app/</p>
                       </div>
                     </div>
                     

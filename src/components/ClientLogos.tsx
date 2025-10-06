@@ -96,6 +96,7 @@ const ClientLogos = () => {
               <img 
                 src={client.logo} 
                 alt={`${client.name} logo`}
+                loading="lazy"
                 className="max-h-20 max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;

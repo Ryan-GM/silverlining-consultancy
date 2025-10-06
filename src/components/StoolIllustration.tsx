@@ -9,6 +9,7 @@ const StoolIllustration = () => {
         alt="Silverlining Consulting Ltd - Three-legged stool representing our core services: Project and Event Management, Meetings, Workshops and Conferences, and Coaching & Mercy's fireplace"
         width="400"
         height="400"
+        loading="lazy"
         className="max-w-full h-auto"
         style={{
           filter: 'brightness(1.1) contrast(1.1)',
